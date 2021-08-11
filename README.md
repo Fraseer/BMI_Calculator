@@ -1,1 +1,1 @@
-This is a calculator for working out a persons BMI
+This is a calculator for working out a persons BMI.
