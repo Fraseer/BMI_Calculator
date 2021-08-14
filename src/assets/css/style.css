@@ -1,0 +1,27 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: goldenrod;
+  color: lawngreen;
+}
+
+input[type="text"]{
+  padding: 8px 8 px;
+  margin: 6px 0;
+  box-sizing: border-box;
+  font-size: large;
+  color: lawngreen;
+  background-color: maroon;
+}
+
+button{
+  background-color: lightcoral;
+  padding: 8px 8px;
+  font-size: large;
+  color: greenyellow;
+}
+
+#results {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  color: lawngreen;
+}
