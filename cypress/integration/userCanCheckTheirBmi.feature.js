@@ -12,4 +12,5 @@ describe("User can check their BMI", () => {
   it('displays a message of you are healthy', () => {
     cy.get('#results').should('contain', 'healthy')
   });
+  
 });

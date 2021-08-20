@@ -6,7 +6,11 @@ function calculateBMI() {
   let message = getBMIClassification(results);
 
   let displayResultsElement = document.getElementById("results");
-  displayResultsElement.innerHTML = `<h2> Your BMI value is: ${results} and you are ${message}</h2>`
+  if(isNaN(results)){
+    displayResultsElement.innerHTML = `Please enter a number.`
+  }else{
+    displayResultsElement.innerHTML = `<h2> Your BMI value is: ${results} and you are ${message}</h2>`
+  }
 }
 
 const button = document.getElementById("calculate");
