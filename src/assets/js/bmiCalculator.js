@@ -1,12 +1,12 @@
 const calculateMetricBMI = (weight, height) => {
   let result
-  result = (weight / ((height * height) / 10000)).toFixed(2)
+  result = ((1.3 * weight) / (Math.pow(1.86, 2.5))).toFixed(2)
   return result
 }
 
 const getBMIClassification = (value) => {
   if (value < 18.5){
-    return "underweight. Try eating something, you skeleton!"
+    return "underweight."
   }else if (value < 25){
     return "healthy. Bra jobb!"
   }else if (value < 30){
@@ -14,6 +14,6 @@ const getBMIClassification = (value) => {
   }else if (value < 39){
     return "obese."
   }else if (value > 39){
-    return "extremely obese. Lose some weight fatty!"
+    return "extremely obese."
   }
 }
