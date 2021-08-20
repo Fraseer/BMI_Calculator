@@ -6,10 +6,10 @@ describe("User can check their BMI", () => {
     cy.get("#height").type("186");
     cy.get("#calculate").click();
   });
-  it("is expected to display BMI value of 26.01", () => {
-    cy.get("#results").should("contain", "26.01");
+  it("is expected to display BMI value of 24.80", () => {
+    cy.get("#results").should("contain", "24.80");
   });
-  it('displays a message of you are overweight', () => {
-    cy.get('#results').should('contain', 'overweight')
+  it('displays a message of you are healthy', () => {
+    cy.get('#results').should('contain', 'healthy')
   });
 });
