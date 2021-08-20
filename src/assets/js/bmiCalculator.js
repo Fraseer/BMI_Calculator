@@ -1,6 +1,6 @@
 const calculateMetricBMI = (weight, height) => {
   let result
-  result = ((1.3 * weight) / (Math.pow(1.86, 2.5))).toFixed(2)
+  result = ((1.3 * weight) / (Math.pow(height, 2.5))).toFixed(2)
   return result
 }
 
